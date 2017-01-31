@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         WebView webView = (WebView) findViewById(R.id.main_webview);
         // Habilitar Java Script. Desabilitado por segurança!
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
         webView.loadUrl("file:///android_asset/index.html");
     }
 }
